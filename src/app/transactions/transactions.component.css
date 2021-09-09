@@ -1,0 +1,27 @@
+h1 {
+    margin-left: 600px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:#1f1a4d;
+ 
+}
+ 
+.form{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+ 
+mat-form-field{
+    width: 500px;
+}
+ 
+.form-elements{
+    flex-direction: column;
+    margin-left: 135px;
+}
+ 
+button{
+    height: 55px;
+    width: 350px;
+    margin-left: 50px;
+}

@@ -1,0 +1,111 @@
+[
+    {
+        "No":"1",
+        "accountNo": "00001",
+        "name": "Alexander",
+        "Balance": "6000",
+        "Type": "Saving",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"7000"
+
+    },
+    {
+        "No":"2",
+        "accountNo": "00002",
+        "name": "Tim",
+        "Balance": "8000",
+        "Type": "Car Loan",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"7000"        
+    },
+    {
+        "No":"3",
+        "accountNo": "00003",
+        "name": "Eric",
+        "Balance": "8000",
+        "Type": "Saving",
+        "amount":"1000",
+        "Transcation-Type":"debit",
+        "Current-Balance":"9000" 
+        
+    },
+    {
+        "No":"4",
+        "accountNo": "00004",
+        "name": "Hermoini",
+        "Balance": "10000",
+        "Type": "Car Loan",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"9000" 
+        
+    },
+    {
+        "No":"5",
+        "accountNo": "00005",
+        "name": "Harry",
+        "Balance": "9000",
+        "Type": "Saving",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"10000" 
+        
+    },
+    {
+        "No":"6",
+        "accountNo": "00006",
+        "name": "Potter",
+        "Balance": "16000",
+        "Type": "Car Loan",
+        "amount":"5000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"11000" 
+        
+    },
+    {
+        "No":"7",
+        "accountNo": "00007",
+        "name": "Lucas",
+        "Balance": "12000",
+        "Type": "Saving",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"13000" 
+        
+    },
+    {
+        "No":"8",
+        "accountNo": "00008",
+        "name": "Alex",
+        "Balance": "15000",
+        "Type": "Car Loan",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"14000" 
+        
+    },
+    {
+        "No":"9",
+        "accountNo": "00009",
+        "name": "Noah",
+        "Balance": "14000",
+        "Type": "Saving",
+        "amount":"1000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"15000" 
+ 
+    },
+    {
+        "No":"10",
+        "accountNo": "00010",
+        "name": "Adam",
+        "Balance": "26000",
+        "Type": "Car Loan",
+        "amount":"10000",
+        "Transcation-Type":"credit",
+        "Current-Balance":"16000" 
+        
+    }
+]

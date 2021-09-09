@@ -1,0 +1,63 @@
+<form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" class="form">
+    <div class="form-group">
+        <div class="form-element">
+        <mat-form-field class="full-width">
+            <mat-label> First Name </mat-label>
+            <input formControlName="firstName" matInput>
+            <mat-error *ngIf="signUpForm.get('firstName').hasError('required')">
+                This is a required field
+            </mat-error>
+        </mat-form-field>
+        </div>
+        <div class="form-element">
+        <mat-form-field class="full-width">
+            <mat-label>Last Name</mat-label>
+            <input formControlName="lastName" matInput>
+            <mat-error *ngIf="signUpForm.get('lastName').hasError('required')">
+                This is a required field
+            </mat-error>
+        </mat-form-field>
+        </div>
+        <div class="form-element">
+        <mat-form-field class="full-width">
+            <mat-label>Profession</mat-label>
+            <input formControlName="profession" matInput>
+            <mat-error *ngIf="signUpForm.get('profession').hasError('required')">
+                This is a required field
+            </mat-error>
+        </mat-form-field>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="form-element">     
+           <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput>
+            <mat-error *ngIf="signUpForm.get('email').hasError('required')">
+                This is a required field
+            </mat-error>
+            <mat-error *ngIf="signUpForm.get('email').hasError('pattern')">
+                Please enter valid email
+            </mat-error>
+        </mat-form-field>
+        </div>
+         <div class="form-element">
+        <mat-form-field class="full-width">
+            <mat-label>Phone Number</mat-label>
+            <input formControlName="phoneNumber" matInput>
+            <mat-error *ngIf="signUpForm.get('phoneNumber').hasError('required')">
+                This is a required field
+            </mat-error>
+            <mat-error *ngIf="signUpForm.get('phoneNumber').hasError('pattern')">
+                Please enter a valid number
+            </mat-error>
+        </mat-form-field>
+    </div>
+    </div>
+</form>
+    <div align="center">
+        <button type="button" [disabled]="signUpForm.invalid" (click)="saveForm()" mat-fab color="accent">Save</button>
+        <button mat-button mat-dialog-close>Cancel</button>
+    </div>
+
+

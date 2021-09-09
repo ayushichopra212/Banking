@@ -1,0 +1,34 @@
+<form [formGroup]="loginForm">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> Enter Credentials </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            
+                <div>
+                    <mat-form-field class="full-width">
+                        <mat-label> Account Number </mat-label>
+                        <input formControlName="accountNo" matInput placeholder="Enter your account no.">
+                        <mat-error *ngIf="loginForm.get('accountNo').hasError('required')">
+                            This is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field class="full-width">
+                        <mat-label>Password</mat-label>
+                        <input type="password" formControlName="password" matInput>
+                        <mat-error *ngIf="loginForm.get('password').hasError('required')">
+                            It is required
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+             
+        </mat-card-content>
+        <mat-card-actions>
+            <button type="button" [disabled]="loginForm.invalid" mat-dialog-close (click)="checkAndSave()" mat-fab
+                color="accent">Enter</button>
+            <button mat-button mat-dialog-close>Cancel</button>
+        </mat-card-actions>
+    </mat-card>
+</form>

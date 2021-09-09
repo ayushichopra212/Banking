@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <h1>Bank Details!</h1>
+    <form [formGroup]="bankForm" class="form">
+        <div class="form-elements">
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="AccountNo." class="form-control" formControlName="accountNo">
+                    <mat-error *ngIf="bankForm.get('accountNo').hasError('required')" class="container" alert
+                        alert-danger>
+                        Please enter the AccountNo.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="Name" class="form-control" #refName formControlName="name">
+                    <mat-error *ngIf="bankForm.get('name').hasError('required')" class="container">
+                        Please enter the Name.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="Balance" class="form-control" #refbalance formControlName="balance">
+                    <mat-error *ngIf="bankForm.get('balance').hasError('required')" class="container" alert
+                        alert-danger>
+                        Please enter the Balance.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="Type" class="form-control" #reftype formControlName="type">
+                    <mat-error *ngIf="bankForm.get('type').hasError('required')" class="container" alert alert-danger>
+                        Please enter the Type.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="form-elements">
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="Amount" class="form-control" #refamount formControlName="amount">
+                    <mat-error *ngIf="bankForm.get('amount')?.hasError('required')" class="container" alert
+                        alert-danger>
+                        Please enter the Amount.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <!-- <input matInput placeholder="Transaction-type" class="form-control" #reftransaction
+                        formControlName="transactionType"> -->
+                        <mat-label>Transaction</mat-label>
+                        <mat-select class="form-control" formControlName="transactionType">
+                            <mat-option> GGGGG</mat-option>
+                            <mat-option>hhhhh</mat-option>
+                        </mat-select>
+                    <mat-error *ngIf="bankForm.get('transactionType')?.hasError('required')" class="container" alert
+                        alert-danger>
+                        Please enter the Transaction-type.
+                    </mat-error>
+                </mat-form-field>
+            </div>            
+            <div class="form-group">
+                <mat-form-field class="example-full-width" appearance="outline">
+                    <input matInput placeholder="CurrentBalance" class="form-control" #refBalance
+                        formControlName="currentBalance">
+                    <mat-error *ngIf="bankForm.get('currentBalance')?.hasError('required')" class="container" alert
+                        alert-danger>
+                        Please enter the currentBalance.
+                    </mat-error>
+                </mat-form-field>
+            </div>
+            <button type="button" mat-raised-button color="primary" mat-dialog-close
+                [disabled]="bankForm.invalid">Save</button>
+        </div>
+    </form>
+ 
+</div>

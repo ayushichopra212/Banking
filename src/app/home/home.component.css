@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    background-color: aqua;
+    height: 700px;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(http://cdn.shopify.com/s/files/1/0984/3604/products/Pastel_Sky_1e22a893-2330-499b-9c5d-ae73294f7410_1200x1200.jpg?v=1568812165);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 95vh;
+}
+
+button {
+    margin-bottom: 400px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+.loginBtn {
+    margin-left: 70px;
+}
+
+.createBtn {
+    margin-left: 20px;
+}
+
